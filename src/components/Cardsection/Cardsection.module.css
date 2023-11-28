@@ -1,17 +1,14 @@
-.wrapper{
+.CardSection {
     background-color: #121212;
     padding: 10px;
     padding-left: 20px;
     color: #FFFFFF;
     height: 100%;
     width: 100%;
+    /* border: 1px solid white; */
 }
 
-.sectionTitle{
-    
-}
-
-.sectionHeader{
+.card_title {
     font-size: 32px;
     line-height: 30px;
     width: 100%;
@@ -20,10 +17,9 @@
     top: 161px;
     display: flex;
     justify-content: space-between;
-
 }
 
-.sectionButton{
+.showbtn {
     background-color: #121212;
     border: hidden;
     cursor: pointer;
@@ -32,14 +28,4 @@
 .show {
     color: #34C94B;
     border: hidden;
-}
-
-.gridCard {
-    padding-top: 20px;
-    display: flex;
-    gap: 50px;
-    flex-wrap: wrap;
-    /* border: 2px solid white; */
-    overflow: hidden;
-    padding-left: 20px;
 }

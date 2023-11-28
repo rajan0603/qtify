@@ -1,14 +1,15 @@
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
-import Section from "./components/Section/Section";
-import { fetchTopAlbum } from "./Api";
+import { fetchNewAlbum, fetchTopAlbum } from "./Api";
+import CardSection from "./components/Cardsection/Cardsection";
 
 function App() {
   return (
     <>
       <Navbar />
       <Hero />
-      <Section title="Top Album" albumData={fetchTopAlbum} />
+      <CardSection title="Top Album" albumData={fetchTopAlbum} />
+      <CardSection title="New Album" albumData={fetchNewAlbum} />
     </>
   );
 }
