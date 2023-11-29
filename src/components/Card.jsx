@@ -27,7 +27,7 @@ function Card({ albumData, isShowAll }) {
 
       {isShowAll ? (
         <div className="card">
-          {cards.map((card) => (
+          {cards && cards.map((card) => (
             <CardAlbum
               data={{
                 title: card.title,
